@@ -1,0 +1,84 @@
+ @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(30px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg); 
+            }
+            50% { 
+                transform: translateY(-20px) rotate(3deg); 
+            }
+        }
+        
+        @keyframes glowPulse {
+            0% { 
+                box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            }
+            100% { 
+                box-shadow: 0 0 40px rgba(212, 175, 55, 0.8), 0 0 60px rgba(212, 175, 55, 0.4);
+            }
+        }
+        
+        @keyframes shimmer {
+            0% { 
+                background-position: -200px 0; 
+            }
+            100% { 
+                background-position: calc(200px + 100%) 0; 
+            }
+        }
+        
+        @keyframes bounceGentle {
+            0%, 100% { 
+                transform: translateY(0); 
+            }
+            50% { 
+                transform: translateY(-10px); 
+            }
+        }
+        
+        .shimmer-effect {
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(212, 175, 55, 0.4),
+                transparent
+            );
+            background-size: 200px 100%;
+            animation: shimmer 2s infinite;
+        }
+        
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #D4AF37, #fcd34d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .custom-shadow {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(212, 175, 55, 0.1);
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
