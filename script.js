@@ -15,7 +15,7 @@
 
         // Countdown Timer
         function updateCountdown() {
-            const targetDate = new Date('September 10, 2025 17:00:00 GMT+0700').getTime();
+            const targetDate = new Date('September 14, 2025 00:00:00 GMT+0700').getTime();
             const now = new Date().getTime();
             const distance = targetDate - now;
 
